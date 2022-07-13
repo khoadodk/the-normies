@@ -7,6 +7,9 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+    *{
+        box-sizing: border-box;
+    }
     body {
         font-family: "Sora", sans-serif;
         overflow-x: hidden;
@@ -16,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
         text-decoration: none;
         font-family: "Sora", sans-serif;
+    }
+
+    p {
+        line-height: 2;
     }
 `;
 

@@ -3,7 +3,7 @@ import Button from './Button';
 import Logo from './Logo';
 
 const SectionWrapper = styled.section`
-  width: 100vw;
+  width: 100%;
   background-color: ${(props) => props.theme.body};
 `;
 

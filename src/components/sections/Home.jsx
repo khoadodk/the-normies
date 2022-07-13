@@ -11,7 +11,7 @@ const rotate = keyframes`
 
 const SectionWrapper = styled.section`
   min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-color: ${(props) => props.theme.body};
 `;
