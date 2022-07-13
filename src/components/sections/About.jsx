@@ -21,6 +21,7 @@ const ContainerWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 `;
 
 const BoxWrapper = styled.div`
@@ -32,9 +33,16 @@ const BoxWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleWrapper = styled.p``;
+const TitleWrapper = styled.h2``;
 
-const SubtitleWrapper = styled.p``;
+const SubtitleWrapper = styled.p`
+  margin-top: 1rem;
+`;
+
+const ButtonWrapper = styled.div`
+  align-self: flex-start;
+  margin-top: 1rem;
+`;
 
 const About = () => {
   return (
@@ -55,9 +63,11 @@ const About = () => {
             successful investors. Join an ambitious ever-growing
             community with multiple benefits and utilities.
           </SubtitleWrapper>
-          <ThemeProvider theme={dark}>
-            <Button text="JOIN OUR DISCORD" link="#" />
-          </ThemeProvider>
+          <ButtonWrapper>
+            <ThemeProvider theme={dark}>
+              <Button text="JOIN OUR DISCORD" link="#" />
+            </ThemeProvider>
+          </ButtonWrapper>
         </BoxWrapper>
       </ContainerWrapper>
     </SectionWrapper>

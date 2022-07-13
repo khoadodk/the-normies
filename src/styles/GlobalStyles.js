@@ -3,7 +3,7 @@ import '@fontsource/arya';
 import '@fontsource/sora';
 
 const GlobalStyles = createGlobalStyle`
-    *::before, *::after,h1,h2,h3,h4,h5,h6 {
+    *,*::before, *::after,h1,h2,h3,h4,h5,h6 {
         margin: 0;
         padding: 0;
     }
@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
         text-decoration: none;
         font-family: "Sora", sans-serif;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        line-height: 1.7;
     }
 
     p {
