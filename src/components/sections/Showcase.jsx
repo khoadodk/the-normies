@@ -118,31 +118,31 @@ const Showcase = () => {
         <NFTItem
           img={img1}
           number="1"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row1Ref}
         />
         <NFTItem
           img={img2}
           number="2"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row1Ref}
         />
         <NFTItem
           img={img3}
           number="3"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row1Ref}
         />
         <NFTItem
           img={img4}
           number="4"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row1Ref}
         />
         <NFTItem
           img={img5}
           number="5"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row1Ref}
         />
       </RowWrapper>
@@ -150,31 +150,31 @@ const Showcase = () => {
         <NFTItem
           img={img6}
           number="6"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row2Ref}
         />
         <NFTItem
           img={img7}
           number="7"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row2Ref}
         />
         <NFTItem
           img={img8}
           number="8"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row2Ref}
         />
         <NFTItem
           img={img9}
           number="9"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row2Ref}
         />
         <NFTItem
           img={img10}
           number="10"
-          price="0.1 ETH"
+          price="0.1"
           passRef={Row2Ref}
         />
       </RowWrapper>

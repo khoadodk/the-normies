@@ -1,23 +1,12 @@
 import styled from 'styled-components';
 import DrawSVG from '../DrawSVG';
+import Title from '../Title';
 
 const SectionWrapper = styled.div`
   min-height: 100vh;
   width: 100%;
   position: relative;
   background-color: ${(props) => props.theme.body};
-`;
-
-const TitleWrapper = styled.h1`
-  font-size: ${(props) => props.theme.fontxxl};
-  color: ${(props) => props.theme.text};
-  display: flex;
-  text-transform: capitalize;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
-  border-bottom: 2px solid ${(props) => props.theme.text};
-  width: fit-content;
 `;
 
 const ContainerWrapper = styled.div`
@@ -122,7 +111,7 @@ const RoadmapItem = ({ title, text }) => {
 const Roadmap = () => {
   return (
     <SectionWrapper>
-      <TitleWrapper>Roadmap</TitleWrapper>
+      <Title titleText="Roadmap" />
       <ContainerWrapper>
         <SVGWrapper>
           <DrawSVG />

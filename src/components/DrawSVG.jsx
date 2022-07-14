@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 import Vector from '../Icons/Vector';
 
-const Bounce = keyframes`
+const bounce = keyframes`
 from {
     transform: translateX(-50%) scale(.5);
 }
@@ -33,11 +33,22 @@ const Ball = styled.div`
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  background-color: ${(props) => props.theme.text};
-  animation: ${Bounce} 0.5s linear infinite alternate;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  animation: ${bounce} 0.5s linear infinite alternate;
 `;
 
 const DrawSVG = () => {
