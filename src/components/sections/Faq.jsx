@@ -46,10 +46,14 @@ const Faq = () => {
       pinSpacing: false,
       scrub: true,
     });
+
+    return () => {
+      ScrollTrigger.kill();
+    };
   }, []);
 
   return (
-    <SectionWrapper ref={ref}>
+    <SectionWrapper ref={ref} id="faq">
       <ThemeProvider theme={dark}>
         <Title titleText="FAQs" />
         <ContainerWrapper>

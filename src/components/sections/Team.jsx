@@ -14,6 +14,10 @@ const SectionWrapper = styled.div`
   width: 100%;
   position: relative;
   background-color: ${(props) => props.theme.body};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Container = styled.div`
@@ -76,7 +80,7 @@ const PositionWrapper = styled.h2`
 
 const MemberComponent = ({ img, name = '', position = '' }) => {
   return (
-    <ItemWrapper>
+    <ItemWrapper id="team">
       <ImgContainer>
         <img src={img} alt={name} />
       </ImgContainer>

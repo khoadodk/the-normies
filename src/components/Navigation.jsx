@@ -42,19 +42,40 @@ const MenuItemWrapper = styled.li`
 `;
 
 const Navigation = () => {
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
   return (
     <SectionWrapper>
       <NavbarWrapper>
         <Logo />
         <MenuWrapper>
-          <MenuItemWrapper>Home</MenuItemWrapper>
-          <MenuItemWrapper>About</MenuItemWrapper>
-          <MenuItemWrapper>Roadmap</MenuItemWrapper>
-          <MenuItemWrapper>Showcase</MenuItemWrapper>
-          <MenuItemWrapper>Team</MenuItemWrapper>
-          <MenuItemWrapper>Faq</MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('home')}>
+            Home
+          </MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('about')}>
+            About
+          </MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('roadmap')}>
+            Roadmap
+          </MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('showcase')}>
+            Showcase
+          </MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('team')}>
+            Team
+          </MenuItemWrapper>
+          <MenuItemWrapper onClick={() => scrollTo('faq')}>
+            Faq
+          </MenuItemWrapper>
         </MenuWrapper>
-        <Button text="Connext Wallet" link="https://google.com" />
+        <Button text="Connext Wallet" link="#" />
       </NavbarWrapper>
     </SectionWrapper>
   );

@@ -46,7 +46,7 @@ const ButtonWrapper = styled.div`
 
 const About = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="about">
       <ContainerWrapper>
         <BoxWrapper>
           <Carousel />

@@ -110,7 +110,7 @@ const RoadmapItem = ({ title, text }) => {
 
 const Roadmap = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="roadmap">
       <Title titleText="Roadmap" />
       <ContainerWrapper>
         <SVGWrapper>

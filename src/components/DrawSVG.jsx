@@ -88,6 +88,10 @@ const DrawSVG = () => {
         },
       },
     });
+
+    return () => {
+      ScrollTrigger.kill();
+    };
   }, []);
 
   return (

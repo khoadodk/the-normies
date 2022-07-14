@@ -113,7 +113,7 @@ const Showcase = () => {
   const Row2Ref = useRef(null);
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="showcase">
       <RowWrapper direction="none" ref={Row1Ref}>
         <NFTItem
           img={img1}
