@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import DrawSVG from '../DrawSVG';
 
 const SectionWrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   background-color: ${(props) => props.theme.body};
