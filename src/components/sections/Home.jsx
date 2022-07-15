@@ -19,6 +19,10 @@ const ContainerWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const BoxWrapper = styled.div`

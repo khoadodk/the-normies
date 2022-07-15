@@ -22,6 +22,11 @@ const ContainerWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const BoxWrapper = styled.div`
@@ -31,17 +36,33 @@ const BoxWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
-const TitleWrapper = styled.h2``;
+const TitleWrapper = styled.h2`
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontlg};
+  }
+  @media (max-width: 425px) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
+`;
 
 const SubtitleWrapper = styled.p`
   margin-top: 1rem;
+  @media (max-width: 425px) {
+    font-size: ${(props) => props.theme.fontsm};
+  }
 `;
 
 const ButtonWrapper = styled.div`
   align-self: flex-start;
   margin-top: 1rem;
+  @media (max-width: 768px) {
+    align-self: center;
+  }
 `;
 
 const About = () => {

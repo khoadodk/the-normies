@@ -10,6 +10,9 @@ const TitleWrapper = styled.h1`
   margin: 1rem auto;
   border-bottom: 2px solid ${(props) => props.theme.text};
   width: fit-content;
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
 `;
 
 const Title = ({ titleText }) => {

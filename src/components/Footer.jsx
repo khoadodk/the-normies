@@ -78,6 +78,10 @@ const BottomWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const ButtonWrapper = styled.div`

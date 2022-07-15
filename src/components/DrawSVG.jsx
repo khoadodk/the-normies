@@ -26,6 +26,9 @@ const VectorWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: 768px) {
+    left: 1rem;
+  }
 `;
 
 const Ball = styled.div`
@@ -49,6 +52,9 @@ const Ball = styled.div`
     #dd00f3
   );
   animation: ${bounce} 0.5s linear infinite alternate;
+  @media (max-width: 768px) {
+    left: 1rem;
+  }
 `;
 
 const DrawSVG = () => {
@@ -90,7 +96,7 @@ const DrawSVG = () => {
     });
 
     return () => {
-      ScrollTrigger.kill();
+      if (tl) tl.kill();
     };
   }, []);
 

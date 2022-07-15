@@ -50,7 +50,10 @@ const TitleWrapper = styled.h1`
   color: ${(props) => props.theme.body};
   padding: 1rem 2rem;
   z-index: 10;
-  width: 35%;
+  width: 50%;
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
 `;
 
 const Banner = () => {

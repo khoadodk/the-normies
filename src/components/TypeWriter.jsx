@@ -27,6 +27,16 @@ const TitleWrapper = styled.h2`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media (max-width: 1024px) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontl};
+  }
+  @media (max-width: 320px) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
 `;
 
 const SubtitleWrapper = styled.h2`
@@ -36,6 +46,10 @@ const SubtitleWrapper = styled.h2`
   font-weight: 600;
   margin: 1.5rem 0;
   align-self: flex-start;
+  @media (max-width: 320px) {
+    font-size: ${(props) => props.theme.fontmd};
+    margin: 1rem 0;
+  }
 `;
 
 const ButtonContainer = styled.div`

@@ -23,10 +23,10 @@ import Arrow from '../assets/Arrow.svg';
 
 const ContainerWrapper = styled.div`
   width: 25vw;
-  height: 70vh;
+  height: 45vw;
   .swiper {
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
   .swiper-slide {
     background-color: ${(props) => props.theme.carouselColor};
@@ -34,6 +34,9 @@ const ContainerWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    img {
+      width: 100%;
+    }
   }
   .swiper-pagination {
     color: ${(props) => props.theme.text};
@@ -49,6 +52,9 @@ const ContainerWrapper = styled.div`
     &::after {
       display: none;
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .swiper-button-prev {
     color: ${(props) => props.theme.text};
@@ -59,6 +65,9 @@ const ContainerWrapper = styled.div`
     background-size: cover;
     width: 4rem;
     &::after {
+      display: none;
+    }
+    @media (max-width: 768px) {
       display: none;
     }
   }

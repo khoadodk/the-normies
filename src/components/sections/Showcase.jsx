@@ -19,7 +19,7 @@ const move = keyframes`
 
 const SectionWrapper = styled.div`
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: ${(props) => props.theme.text};
   color: ${(props) => props.theme.body};
@@ -34,8 +34,10 @@ const RowWrapper = styled.div`
   box-sizing: content-box;
   margin: 2rem 0;
   display: flex;
-
   animation: ${move} 20s linear infinite ${(props) => props.direction};
+  @media (max-width: 768px) {
+    animation-duration: 12s;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -45,6 +47,10 @@ const ImgContainer = styled.div`
 
   border-radius: 20px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 10rem;
+  }
 
   img {
     width: 100%;

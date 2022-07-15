@@ -34,7 +34,9 @@ const ItemsWrapper = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  @media (max-width: 768px) {
+    width: 60%;
+  }
   & > *:nth-of-type(2n + 1) {
     justify-content: start;
     div {
@@ -68,6 +70,9 @@ const ItemContainer = styled.div`
   height: fit-content;
   padding: 1rem;
   border: 3px solid ${(props) => props.theme.text};
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const BoxWrapper = styled.p`
@@ -84,6 +89,12 @@ const SubtitleWrapper = styled.span`
   font-size: ${(props) => props.theme.fontxl};
   text-transform: capitalize;
   color: ${(props) => props.theme.text};
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontlg};
+  }
+  @media (max-width: 425px) {
+    font-size: ${(props) => props.theme.fontmd};
+  }
 `;
 
 const TextWrapper = styled.span`
@@ -117,25 +128,24 @@ const Roadmap = () => {
           <DrawSVG />
         </SVGWrapper>
         <ItemsWrapper>
-          <ItemWrapper>&nbsp;</ItemWrapper>
           <RoadmapItem
-            title="Pre-Launch"
+            title="1.Pre-Launch"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, voluptatem."
           />
           <RoadmapItem
-            title="Minting"
+            title="2.Minting"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, voluptatem."
           />
           <RoadmapItem
-            title="Staking"
+            title="3.Staking"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, voluptatem."
           />
           <RoadmapItem
-            title="Merch"
+            title="4.Merch"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, voluptatem."
           />
           <RoadmapItem
-            title="Roadmap 2.0"
+            title="5.Roadmap 2.0"
             text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, voluptatem."
           />
         </ItemsWrapper>
