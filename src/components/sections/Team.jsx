@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import Title from '../Title';
 
-import img1 from '../../assets/Nfts/bighead-1.svg';
-import img2 from '../../assets/Nfts/bighead-2.svg';
-import img3 from '../../assets/Nfts/bighead-3.svg';
-import img4 from '../../assets/Nfts/bighead-4.svg';
-import img5 from '../../assets/Nfts/bighead-5.svg';
-import img6 from '../../assets/Nfts/bighead-6.svg';
+import img1 from '../../assets/Nfts/bighead-1.png';
+import img2 from '../../assets/Nfts/bighead-2.png';
+import img3 from '../../assets/Nfts/bighead-3.png';
+import img4 from '../../assets/Nfts/bighead-4.png';
+import img5 from '../../assets/Nfts/bighead-5.png';
+import img6 from '../../assets/Nfts/bighead-6.png';
 import ConfettiComponent from '../ConfettiComponent';
 
 const SectionWrapper = styled.div`
@@ -32,7 +32,6 @@ const Container = styled.div`
 
 const ItemWrapper = styled.div`
   width: calc(20rem - 4vw);
-  padding: 1rem 0;
   color: ${(props) => props.theme.body};
   margin: 2rem 1rem;
   position: relative;
@@ -53,6 +52,7 @@ const ImgContainer = styled.div`
   cursor: pointer;
 
   img {
+    border-radius: 18px;
     width: 100%;
     height: auto;
     transition: all 0.3s ease;

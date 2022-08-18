@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import GIF from '../assets/HomeGIF.gif';
 
 const VideoContainer = styled.div`
-  width: 100%;
+  width: 80%;
 
   img {
     width: 100%;

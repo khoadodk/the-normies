@@ -54,6 +54,7 @@ const SubtitleWrapper = styled.h2`
 
 const ButtonContainer = styled.div`
   align-self: flex-start;
+  margin-bottom: 2rem;
 `;
 
 const TypeWriter = () => {
